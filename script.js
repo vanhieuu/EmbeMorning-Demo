@@ -8,11 +8,10 @@ const demoConfig = {
   heroNote:
     "Bản này chỉ giữ ảnh, bảng lời chúc đầu và một section nội dung nữa để người xem nhìn phát là hiểu hướng thiết kế của cả site.",
   heroChips: ["gallery ảnh", "lời chúc mở đầu", "layout demo tối giản"],
-  heroCardCopy:
-    "Không còn countdown, quà mở hay 3D. Đây là phiên bản nhẹ để showcase giao diện và tone nội dung.",
+  heroCardCopy: "Text nè",
   dateNote: "Ngày gốc của trang vẫn là 27/06.",
-  storyIntro:
-    "Nếu chỉ cần một bản xem nhanh, thế này là đủ: có mở đầu, có lời chúc, có ảnh và có thêm một section nữa để giữ nhịp trang.",
+  storyTitle: "Text nè",
+  storyIntro: "Đây là text.",
   photoLead:
     "Gallery này đang dùng khung đồng nhất, nên sau này có thêm 5-6 ảnh thì chỉ cần thêm vào data là vẫn lên đều và không bị lệch bố cục.",
   wishes: [
@@ -66,6 +65,7 @@ const elementMap = {
   heroDateValue: document.getElementById("heroDateValue"),
   heroDateNote: document.getElementById("heroDateNote"),
   heroCardCopy: document.getElementById("heroCardCopy"),
+  storyTitle: document.getElementById("storyTitle"),
   storyIntro: document.getElementById("storyIntro"),
   photoLead: document.getElementById("photoLead"),
   photoGallery: document.getElementById("photoGallery"),
@@ -109,6 +109,7 @@ function populateContent() {
   elementMap.heroDateValue.textContent = birthdayLabel;
   elementMap.heroDateNote.textContent = demoConfig.dateNote;
   elementMap.heroCardCopy.textContent = demoConfig.heroCardCopy;
+  elementMap.storyTitle.textContent = demoConfig.storyTitle;
   elementMap.storyIntro.textContent = demoConfig.storyIntro;
   elementMap.photoLead.textContent = demoConfig.photoLead;
 
